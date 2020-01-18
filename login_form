@@ -9,7 +9,8 @@
             $login = "login";
             $senha = "123";
 
-            if(isset($_POST["login"])){
+            if(isset($_POST["login"]))
+            {
               /* -- Input and Output test.
                *echo $_POST["login"] . "<br>"; -
                *echo $_POST["senha"];
