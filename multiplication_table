@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Tabuada </title>
+    </head>
+    <body>
+        <?php
+            $tab = 0;
+            if(isset($_POST["edTABUADA"]))
+            {
+
+                $tab=$_POST["edTABUADA"];
+                if(!is_numeric($tab))
+                {
+                    echo "<br>O valor informado não é numérico <br>";
+                }
+                else
+                {
+                    echo " TABUADA " . $tab . "<br>";
+                    $result = 0;
+                    $contador = 0;
+                    for ($contador; $contador <= 10; $contador++)
+                    {
+                        $result = $contador * $tab;
+                        echo $tab . " X " . $contador . " = " . $result . "<br>";
+                    }
+                }
+            }
+        ?>
+
+        <form method="post">
+            <input type="text" name="edTABUADA">
+
+            <input type="submit">
+        </form>
+
+
+    </body>
+</html>
