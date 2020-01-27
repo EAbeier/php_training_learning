@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+
+</head>
+<body>
+<?php
+define("TESTE", 10);
+echo TESTE . "<br>";
+for($x=0;$x<5;$x++)
+{
+    define("CONSTANTE".$x, $x);
+
+
+}
+echo CONSTANTE0 . "<br>";
+echo CONSTANTE1 . "<br>";
+echo CONSTANTE2 . "<br>";
+
+const VALOR = 1000;
+
+echo VALOR . "<br>"
+
+?>
+</body>
