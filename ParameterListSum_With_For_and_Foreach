@@ -1,0 +1,32 @@
+<?php
+
+function sumAllFor(){
+
+    $lista= func_get_args();
+    $qntd= func_num_args();
+    $total =0;
+    for( $x=0;$x<$qntd; $x++){
+
+        $total += $lista[$x];
+    }
+
+    echo $total;
+
+}
+sumAllFor(10 , 2, 5 , 7);
+
+
+function sumAllForeach(){
+
+    $lista= func_get_args();
+    $qntd= func_num_args();
+    $total =0;
+    //for( $x=0;$x<$qntd; $x++){
+    foreach ($lista as $item){
+        $total += $item;
+    }
+
+    echo "<br>". $total;
+
+}
+sumAllForeach(10 , 2, 5 , 7);
